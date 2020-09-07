@@ -1,0 +1,177 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background: rgb(22,0,36);
+    background: linear-gradient(176deg, rgba(22,0,36,1) 0%, rgba(90,20,140,1) 42%, rgba(244,0,255,1) 100%);
+}
+nav{
+    height: auto;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(5px)
+}  
+    nav ul{
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    nav ul li:hover{
+        margin-top: 5px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+main{
+    padding-top: 60px;
+    height: auto;
+    width: 100%;
+}
+    main section{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section div.div-section{
+        width: 100%;
+        padding-top: 15px;
+    }
+    main section.sobre div.div-section{
+        display: flex;
+        justify-content: space-around;
+    }
+    main section.sobre div.div-section div.imagem{
+        text-align: center;
+    }
+    main section.sobre div.div-section div.imagem ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        font-size: 3rem;
+    }
+    main section.sobre div.div-section div.imagem img{
+        height: 200px;
+        width: 200px;
+        margin-bottom: 20px;
+        border-radius: 50%;
+        box-shadow:
+        0 0 0 10px rgba(112,252,241, 0.7),
+        0 0 0 15px rgba(112,252,241, 0.5),
+        0 0 0 20px rgba(112,252,241, 0.3)
+    }
+    main section.sobre div.div-section div.informacao{
+        width: 400px;
+    }
+    main section.skills div.div-section ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    main section.skills div.div-section ul li{
+        width: 16%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main section.skills div.div-section ul li img{
+        width: 58px;
+        height: 73px;
+        margin: 0px 0px 18px 0px;
+    }
+    main section.skills div.div-section ul li .barra{
+        width: 50%;
+        height: 8px;
+        border-radius: 5px;
+        background-color: #0004;
+    }
+    main section.skills div.div-section ul li .barra div{
+        height: 100%;
+        border-radius: 5px;
+    }
+    #html{
+        width: 60%;
+        background-color: rgb(255, 156, 35);
+    }
+    #css{
+        width: 50%;
+        background-color: rgb(43, 43, 255);
+    }
+    #node{
+        width: 70%;
+        background-color: rgb(2, 163, 2);
+    }
+    #mysql{
+        width: 60%;
+        background-color: rgb(69, 112, 243);
+    }
+    #js{
+        width: 80%;
+        background-color: rgb(241, 241, 0);
+    }
+
+    main section.laboratorio div.div-section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main section.laboratorio div.div-section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 345px;
+        width: 472px;
+        margin: 10px 0px 0px 10px;
+        border-radius: 6px;
+        padding: 10px 5px;
+        font-size: 1rem;
+        text-align: center;
+        box-shadow: -5px -5px 20px 4px rgba(0,0,0,0.3);
+    }
+    main section.laboratorio div.div-section div img{
+        width: 95%;
+        height: 60%;
+        border-radius: 5px;
+    }
+
+    main section.contato div.div-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 90%;
+    }
+    main section.contato div.div-section div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 42%;
+        height: 40px;
+        padding-left: 60px;
+        margin: 20px 0px;
+    }
+    main section.contato div i{
+        font-size: 2rem;
+        margin: 0px 15px;
+    }
+footer{
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}

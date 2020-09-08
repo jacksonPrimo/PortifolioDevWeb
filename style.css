@@ -43,7 +43,7 @@ main{
     width: 100%;
 }
     main section{
-        padding: 20px 0px;
+        padding: 40px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -55,6 +55,7 @@ main{
     main section.sobre div.div-section{
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
     main section.sobre div.div-section div.imagem{
         text-align: center;
@@ -174,4 +175,15 @@ footer{
     height: 40px;
     width: 100%;
     text-align: center;
+}
+@media(min-height: 700px){
+    body{
+        height: 100vh;
+    }
+        body nav{
+            display: none;
+        }
+        body main section, footer{
+            padding: 30px 0px;
+        }
 }

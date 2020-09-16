@@ -6,6 +6,9 @@
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
 }
@@ -33,6 +36,7 @@ nav{
     }
     nav ul li:hover{
         margin-top: 5px;
+        text-decoration: overline;
     }
     nav ul li a{
         font-size: 20px;
@@ -47,6 +51,9 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    main section a{
+        padding-top: 40px;
     }
     main section div.div-section{
         width: 100%;

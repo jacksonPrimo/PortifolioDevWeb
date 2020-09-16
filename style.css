@@ -134,7 +134,6 @@ main{
         width: 80%;
         background-color: rgb(241, 241, 0);
     }
-
     main section.laboratorio div.div-section{
         display: flex;
         justify-content: space-around;

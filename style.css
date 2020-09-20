@@ -29,6 +29,7 @@ nav{
 }  
     nav ul{
         height: 40px;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -52,7 +53,7 @@ main{
         flex-direction: column;
         align-items: center;
     }
-    main section a{
+    main section .a_nav{
         padding-top: 40px;
     }
     main section div.div-section{
@@ -85,11 +86,12 @@ main{
         0 0 0 20px rgba(112,252,241, 0.3)
     }
     main section.sobre div.div-section div.informacao{
-        width: 400px;
+        width: 40%;
     }
     main section.skills div.div-section ul{
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
     main section.skills div.div-section ul li{
@@ -143,8 +145,10 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 40%;
+        min-width: 472px;
+        overflow: hidden;
         height: 355px;
-        width: 472px;
         margin: 10px 0px 0px 10px;
         border-radius: 6px;
         padding: 10px 5px;
@@ -157,23 +161,16 @@ main{
         height: 60%;
         border-radius: 5px;
     }
-
-    main section.contato div.div-section{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 90%;
-    }
     main section.contato div.div-section div{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 42%;
-        height: 40px;
-        padding-left: 60px;
-        margin: 20px 0px;
+        margin: 20px 0px; 
+        display: inline-block;
+        width: 49%;
+        text-align: center;
     }
-    main section.contato div i{
+    main section.contato div.div-section p{
+        display: inline;
+    }
+    main section.contato div.div-section i{
         font-size: 2rem;
         margin: 0px 15px;
     }
@@ -182,14 +179,35 @@ footer{
     width: 100%;
     text-align: center;
 }
-@media(min-height: 700px){
-    body{
-        height: 100vh;
+@media (max-width: 500px){
+    main section.sobre div.div-section{
+        margin-top: 20px;
+        flex-direction: column;
     }
-        body nav{
-            display: none;
-        }
-        body main section, footer{
-            padding: 30px 0px;
-        }
+    main section.sobre div.div-section div.informacao{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    main section.skills div.div-section ul li{
+        width: 40%;
+        margin: 10px 0px;
+    }
+    main section.skills div.div-section ul li .barra{
+        width: 90%;
+    }
+    main section.laboratorio div.div-section{
+        flex-direction: column;
+    }
+    main section.laboratorio div.div-section div{
+        min-width: 350px;
+        height: auto;
+        margin: 30px 0px 0px 10px;
+    }
+    main section.contato div.div-section div{
+        justify-content: center;
+        width: 100%;
+        padding-left: 0px;
+        margin: 10px 0px;
+    }
 }
